@@ -137,3 +137,9 @@ class EmptyFileCopierGUI:
         finally:
             # Re-enable the copy button
             self.copy_button.config(state=tk.NORMAL) 
+if __name__ == "__main__":
+    root = tk.Tk()
+    root.title("Empty File Copier")
+    root.geometry("800x200")
+    app = EmptyFileCopierGUI(root)
+    root.mainloop()
